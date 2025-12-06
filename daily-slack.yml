@@ -1,0 +1,146 @@
+name: Daily Slack Reminder
+
+on:
+  schedule:
+    - cron: '0 8 * * 1-5'  # Monday-Friday at 8 AM UTC
+  workflow_dispatch:
+
+jobs:
+  send-reminders:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Send message to Alex
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data "{
+            \"text\": \"Good morning Alex! 👋\",
+            \"blocks\": [
+              {
+                \"type\": \"section\",
+                \"text\": {
+                  \"type\": \"mrkdwn\",
+                  \"text\": \"*Good morning Alex!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates|daily-weekly-updates>\"
+                }
+              },
+              {
+                \"type\": \"image\",
+                \"image_url\": \"https://raw.githubusercontent.com/savvie99/dailies_alert/main/daily.png\",
+                \"alt_text\": \"Morning reminder\"
+              }
+            ]
+          }" \
+          ${{ secrets.SLACK_WEBHOOK_ALEX }}
+      
+      - name: Send message to Peter
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data "{
+            \"text\": \"Good morning Peter! 👋\",
+            \"blocks\": [
+              {
+                \"type\": \"section\",
+                \"text\": {
+                  \"type\": \"mrkdwn\",
+                  \"text\": \"*Good morning Peter!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates|daily-weekly-updates>\"
+                }
+              },
+              {
+                \"type\": \"image\",
+                \"image_url\": \"https://raw.githubusercontent.com/savvie99/dailies_alert/main/daily.png\",
+                \"alt_text\": \"Morning reminder\"
+              }
+            ]
+          }" \
+          ${{ secrets.SLACK_WEBHOOK_PETER }}
+      
+      - name: Send message to Savvia
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data "{
+            \"text\": \"Good morning Savvia! 👋\",
+            \"blocks\": [
+              {
+                \"type\": \"section\",
+                \"text\": {
+                  \"type\": \"mrkdwn\",
+                  \"text\": \"*Good morning Savvia!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates|daily-weekly-updates>\"
+                }
+              },
+              {
+                \"type\": \"image\",
+                \"image_url\": \"https://raw.githubusercontent.com/savvie99/dailies_alert/main/daily.png\",
+                \"alt_text\": \"Morning reminder\"
+              }
+            ]
+          }" \
+          ${{ secrets.SLACK_WEBHOOK_SAVVIA }}
+      
+      - name: Send message to Stef
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data "{
+            \"text\": \"Good morning Stef! 👋\",
+            \"blocks\": [
+              {
+                \"type\": \"section\",
+                \"text\": {
+                  \"type\": \"mrkdwn\",
+                  \"text\": \"*Good morning Stef!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates|daily-weekly-updates>\"
+                }
+              },
+              {
+                \"type\": \"image\",
+                \"image_url\": \"https://raw.githubusercontent.com/savvie99/dailies_alert/main/daily.png\",
+                \"alt_text\": \"Morning reminder\"
+              }
+            ]
+          }" \
+          ${{ secrets.SLACK_WEBHOOK_STEF }}
+      
+      - name: Send message to Temi
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data "{
+            \"text\": \"Good morning Temi! 👋\",
+            \"blocks\": [
+              {
+                \"type\": \"section\",
+                \"text\": {
+                  \"type\": \"mrkdwn\",
+                  \"text\": \"*Good morning Temi!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates|daily-weekly-updates>\"
+                }
+              },
+              {
+                \"type\": \"image\",
+                \"image_url\": \"https://raw.githubusercontent.com/savvie99/dailies_alert/main/daily.png\",
+                \"alt_text\": \"Morning reminder\"
+              }
+            ]
+          }" \
+          ${{ secrets.SLACK_WEBHOOK_TEMI }}
+      
+      - name: Send message to Yara
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data "{
+            \"text\": \"Good morning Yara! 👋\",
+            \"blocks\": [
+              {
+                \"type\": \"section\",
+                \"text\": {
+                  \"type\": \"mrkdwn\",
+                  \"text\": \"*Good morning Yara!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates|daily-weekly-updates>\"
+                }
+              },
+              {
+                \"type\": \"image\",
+                \"image_url\": \"https://raw.githubusercontent.com/savvie99/dailies_alert/main/daily.png\",
+                \"alt_text\": \"Morning reminder\"
+              }
+            ]
+          }" \
+          ${{ secrets.SLACK_WEBHOOK_YARA }}
