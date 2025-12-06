@@ -23,7 +23,7 @@ jobs:
                 \"type\": \"section\",
                 \"text\": {
                   \"type\": \"mrkdwn\",
-                  \"text\": \"*Good morning Alex!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates|daily-weekly-updates>\"
+                  \"text\": \"*Good morning Alex!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates>\"
                 }
               },
               {
@@ -45,7 +45,7 @@ jobs:
                 \"type\": \"section\",
                 \"text\": {
                   \"type\": \"mrkdwn\",
-                  \"text\": \"*Good morning Peter!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates|daily-weekly-updates>\"
+                  \"text\": \"*Good morning Peter!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates>\"
                 }
               },
               {
@@ -67,7 +67,7 @@ jobs:
                 \"type\": \"section\",
                 \"text\": {
                   \"type\": \"mrkdwn\",
-                  \"text\": \"*Good morning Savvia!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates|daily-weekly-updates>\"
+                  \"text\": \"*Good morning Savvia!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates>\"
                 }
               },
               {
@@ -89,7 +89,7 @@ jobs:
                 \"type\": \"section\",
                 \"text\": {
                   \"type\": \"mrkdwn\",
-                  \"text\": \"*Good morning Stef!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates|daily-weekly-updates>\"
+                  \"text\": \"*Good morning Stef!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates>\"
                 }
               },
               {
@@ -111,7 +111,7 @@ jobs:
                 \"type\": \"section\",
                 \"text\": {
                   \"type\": \"mrkdwn\",
-                  \"text\": \"*Good morning Temi!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates|daily-weekly-updates>\"
+                  \"text\": \"*Good morning Temi!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates>\"
                 }
               },
               {
@@ -133,7 +133,7 @@ jobs:
                 \"type\": \"section\",
                 \"text\": {
                   \"type\": \"mrkdwn\",
-                  \"text\": \"*Good morning Yara!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates|daily-weekly-updates>\"
+                  \"text\": \"*Good morning Yara!* 👋\\n\\nDon't forget to share your daily updates in <#daily-weekly-updates>\"
                 }
               },
               {
